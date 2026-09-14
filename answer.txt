@@ -1,0 +1,5 @@
+roundedCost = 19.
+
+It is truncated, not rounded.
+When a double value is cast to int, the decimal part is removed.
+Therefore, 19.95 becomes 19.
