@@ -1,0 +1,7 @@
+4.1
+Question 1: What happens if the user chooses "Cancel"?
+Answer: If the user chooses "Cancel", the method JOptionPane.showConfirmDialog returns JOptionPane.CANCEL_OPTION (which equals 2). The condition (option == JOptionPane.YES_OPTION) evaluates to false, so the program displays "You've chosen: No".
+
+Question 2: How would you customize the options given to the user (e.g., "Yes" and "No" only)?
+Answer: We can pass JOptionPane.YES_NO_OPTION as the optionType parameter in showConfirmDialog:
+int option = JOptionPane.showConfirmDialog(null, "Do you want to change to the first class ticket?", "Choose Option", JOptionPane.YES_NO_OPTION);
