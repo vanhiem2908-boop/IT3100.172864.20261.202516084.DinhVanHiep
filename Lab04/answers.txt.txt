@@ -1,0 +1,13 @@
+Question 5: Constructor overloading
+
+No, Java does not allow two constructors that differ only in the parameter name or the meaning of the parameter. If both constructors take one parameter of type `String`, they have the same signature, so the compiler reports an error. Constructor overloading requires different parameter lists, such as different numbers or types of parameters.
+
+Question 9.1: Array vs. varargs
+
+I prefer the varargs version when adding a flexible number of DVDs because it allows callers to pass zero or more DVD arguments directly without explicitly creating an array. The array version is useful when a list of DVDs already exists in an array. Both approaches can handle multiple DVDs, so the choice depends on how the method is intended to be called.
+
+Question 10: Passing arguments to methods
+
+1. After `swap(jungleDVD, cinderellaDVD)`, the titles remain the same because Java passes object references by value. The method receives copies of the references, so swapping its local parameters does not swap the original variables in the calling method.
+
+2. After `changeTitle(jungleDVD, cinderellaDVD.getTitle())`, the title of `jungleDVD` changes because the method receives a reference to the same DVD object and modifies that object's `title` through the setter. The copied reference still points to the original object, so the change is visible outside the method.
